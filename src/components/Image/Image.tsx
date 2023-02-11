@@ -1,5 +1,4 @@
-import React from "react";
-import { ImageTypes } from "../../types/image.types";
+import { ImageTypes } from "../../types/Image.types";
 const Image = ({imgUrl, altText, extraClasses}:ImageTypes) => {
   return (
     <>
