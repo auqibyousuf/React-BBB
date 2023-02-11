@@ -1,5 +1,5 @@
 import './styles/globals.css';
-function App() {
+const App = () => {
   return (
     <div className="container mx-auto">
       <p className='text-9xl'>abcd</p>
