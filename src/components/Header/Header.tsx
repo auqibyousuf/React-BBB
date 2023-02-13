@@ -1,13 +1,15 @@
 import Image from "../Image/Image";
 import Lists from "../List/Lists";
-import Search from "../Search/Search";
+import Button from "../Button/Button";
+import { ImSearch } from "react-icons/im";
 
 function Header() {
   return (
     <header>
-      <Image imgUrl="../assets/logo.png" altText="" extraClasses="" />
+            <Image imgUrl={require('../../assets/images/logo.png')} altText="" extraClasses="" />
       <Lists />
-      <Search btnText='' variant='' extraClasses='' event='' />
+      <Button btnText='' variant='secondary' extraClasses='auqib' rightIcon={ImSearch} />
+    
     </header>
   );
 }
