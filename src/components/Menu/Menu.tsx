@@ -4,10 +4,11 @@ import Link from "../Link/Link";
 
 const Menu = ({ links, variant }: MenuTypes) => {
   const menuClasses = classNames("flex ", {
-    "space-x-4": variant == "header",
+    "space-x-4 xs:flex-col xs:absolute xs:top-40 xs:w-screen xs:left-0 xs:space-x-0 md:static md:flex-row md:w-fit":
+      variant == "header",
   });
   const listClasses = classNames({
-    "pt-3 pb-5 px-4 hover:bg-background-neutral-medium cursor-pointer":
+    "lg:pt-3 pb-4 lg:px-4 hover:bg-background-neutral-medium cursor-pointer xs:border-b xs:border-border-neutral-subdued xs:boder-solid md:border-none md:px-3 md:pt-3":
       variant == "header",
   });
   return (
@@ -22,7 +23,7 @@ const Menu = ({ links, variant }: MenuTypes) => {
                 variant={link.variant}
                 rightIcon={link.rightIcon}
                 target={link.target}
-                extraClasses={link.extraClasses}
+                extraClasses=""
               />
             </li>
           );

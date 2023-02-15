@@ -7,6 +7,8 @@ import { LinkTypes } from "../../types/Link.types";
 import classNames from "classnames";
 import Link from "../Link/Link";
 import { AiOutlineUser } from "react-icons/ai";
+import { CgClose, CgMenu } from "react-icons/cg";
+import { useState } from "react";
 
 function Header() {
   const links = [
@@ -48,8 +50,14 @@ function Header() {
   ] as LinkTypes[];
 
   const headerClasses = classNames(
-    "flex justify-between px-24 w-9/12 mx-auto "
+    "flex justify-between px-24 w-full mx-auto relative xs:items-center xs:px-4 sm:px-8 "
   );
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    console.log(isMenuOpen);
+  };
+
   return (
     <header className={headerClasses}>
       <a href="/">
@@ -65,17 +73,29 @@ function Header() {
           linkUrl=""
           leftIcon={AiOutlineUser}
           variant="menu-left-icon"
-          extraClasses=""
+          extraClasses="xs:hidden md:flex"
         />
         <div className="flex flex-row">
           <Menu links={links} variant="header" />
           <Button
             btnText=""
             variant="search"
-            extraClasses=""
+            extraClasses="xs:hidden md:flex"
             rightIcon={ImSearch}
           />
         </div>
+      </div>
+      <div className="flex flex-row md:hidden">
+        {isMenuOpen ? (
+          <ImSearch className="w-8 h-8" />
+        ) : (
+          <ImSearch className="xs:hidden" />
+        )}
+        {isMenuOpen ? (
+          <CgMenu onClick={toggleMenu} className="w-8 h-8 ml-8" />
+        ) : (
+          <CgClose onClick={toggleMenu} className="w-8 h-8 " />
+        )}
       </div>
     </header>
   );

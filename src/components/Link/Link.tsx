@@ -16,14 +16,15 @@ const Link = ({
   const linkClasses = classNames(
     "inline-flex",
     {
-      "text-base leading-5 font-medium items-center text-core-primary":
+      "lg:text-base md:text-sm lg:leading-5 md:leading-4 font-medium items-center text-core-primary xs:justify-between xs:w-full":
         variant == "menu",
-      "text-sm leading-4 font-medium text-background-interactive-default px-1 py-2 mb-6 items-start":
+      "lg:text-base md:text-sm leading-4 font-medium text-background-interactive-default px-1 py-2 mb-6 items-start hover:text-text-interactive-hover hover:underline hover:underline-offset-4 sm:text-sm":
         variant == "menu-left-icon",
     },
     extraClasses
   );
   const iconClasses = classNames(
+    "xs:w-fit",
     {
       "text-background-interactive-default ml-1": variant == "menu",
       "text-background-interactive-default mr-1": variant == "menu-left-icon",
