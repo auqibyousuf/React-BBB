@@ -19,6 +19,9 @@ module.exports = {
         text: {
           interactive: {
             hover: "#00295C",
+            inverted: {
+              pressed: "#C5DDFB",
+            },
           },
         },
         border: {
@@ -36,6 +39,9 @@ module.exports = {
       md: "1024px",
 
       lg: "1440px",
+    },
+    fontFamily: {
+      BrHendrix: ["BrHendrix", "sans-serif'"],
     },
   },
   plugins: [],

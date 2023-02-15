@@ -14,8 +14,8 @@ export const Menu = Template.bind({});
 Menu.args = {
   linkText: "Link",
   linkUrl: "https:www.google.com",
-  extraClasses: "class",
-  variant: "menu",
+  extraClasses: "",
+  variant: "header-menu",
   rightIcon: GoChevronDown,
 };
 
@@ -23,7 +23,15 @@ export const Login = Template.bind({});
 Login.args = {
   linkText: "Link",
   linkUrl: "https:www.google.com",
-  extraClasses: "class",
-  variant: "menu",
+  extraClasses: "",
+  variant: "header-menu",
+  leftIcon: AiOutlineUser,
+};
+export const SocialIcons = Template.bind({});
+Login.args = {
+  linkText: "",
+  linkUrl: "https:www.google.com",
+  extraClasses: "",
+  variant: "social-icon",
   leftIcon: AiOutlineUser,
 };

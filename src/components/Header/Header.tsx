@@ -15,36 +15,31 @@ function Header() {
     {
       linkText: "Finance options",
       linkUrl: "#",
-      extraClasses: "class",
-      variant: "menu",
+      variant: "header-menu",
       rightIcon: GoChevronDown,
     },
     {
       linkText: "Business guidance",
       linkUrl: "#",
-      extraClasses: "class",
-      variant: "menu",
+      variant: "header-menu",
       rightIcon: GoChevronDown,
     },
     {
       linkText: "Our partners",
       linkUrl: "#",
-      extraClasses: "class",
-      variant: "menu",
+      variant: "header-menu",
       rightIcon: GoChevronDown,
     },
     {
       linkText: "News and events",
       linkUrl: "#",
-      extraClasses: "class",
-      variant: "menu",
+      variant: "header-menu",
       rightIcon: GoChevronDown,
     },
     {
       linkText: "About",
       linkUrl: "#",
-      extraClasses: "class",
-      variant: "menu",
+      variant: "header-menu",
       rightIcon: GoChevronDown,
     },
   ] as LinkTypes[];
@@ -74,7 +69,6 @@ function Header() {
           variant="menu-left-icon"
           extraClasses="xs:hidden md:flex"
         />
-
         <div className="flex flex-row">
           <Menu
             links={links}

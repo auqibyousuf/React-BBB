@@ -6,6 +6,7 @@ export type LinkTypes = {
   target?: string;
   rightIcon?: IconType;
   leftIcon?: IconType;
-  variant: "menu" | "menu-left-icon";
+  socialIcon?: IconType;
+  variant: "header-menu" | "menu-left-icon" | "footer-menu" | "social-icon";
   extraClasses?: string;
 };
