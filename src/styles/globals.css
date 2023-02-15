@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Br Hendrix";
+  src: url("../assets/fonts/BRHendrix-Medium.otf");
+}
