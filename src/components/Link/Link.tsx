@@ -16,7 +16,7 @@ const Link = ({
   const linkClasses = classNames(
     "inline-flex",
     {
-      "lg:text-base md:text-sm lg:leading-5 md:leading-4 font-medium items-center text-core-primary xs:justify-between xs:w-full":
+      "lg:text-base md:text-sm lg:leading-5 md:leading-4 font-medium items-center text-core-primary xs:justify-between md:justify-start xs:w-full":
         variant == "menu",
       "lg:text-base md:text-sm leading-4 font-medium text-background-interactive-default px-1 py-2 mb-6 items-start hover:text-text-interactive-hover hover:underline hover:underline-offset-4 sm:text-sm":
         variant == "menu-left-icon",

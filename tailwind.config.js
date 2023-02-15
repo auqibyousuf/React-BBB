@@ -30,14 +30,12 @@ module.exports = {
     },
     screens: {
       xs: "320px",
+
       sm: "768px",
-      // => @media (min-width: 768px) { ... }
 
       md: "1024px",
-      // => @media (min-width: 1024px) { ... }
 
       lg: "1440px",
-      // => @media (min-width: 1440px) { ... }
     },
   },
   plugins: [],

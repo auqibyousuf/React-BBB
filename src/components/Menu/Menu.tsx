@@ -8,7 +8,7 @@ const Menu = ({ links, variant }: MenuTypes) => {
       variant == "header",
   });
   const listClasses = classNames({
-    "lg:pt-3 pb-4 lg:px-4 hover:bg-background-neutral-medium cursor-pointer xs:border-b xs:border-border-neutral-subdued xs:boder-solid md:border-none md:px-3 md:pt-3":
+    "lg:pt-3 pb-4 lg:px-4 hover:bg-background-neutral-medium cursor-pointer xs:border-b xs:border-border-neutral-subdued xs:boder-solid md:border-none md:px-3 md:pt-3 xs:px-6 xs:py-4":
       variant == "header",
   });
   return (
