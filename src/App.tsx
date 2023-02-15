@@ -1,11 +1,11 @@
-import Header from './components/Header/Header';
-import './styles/globals.css';
+import Header from "./components/Header/Header";
+import "./styles/globals.css";
 const App = () => {
   return (
-    <div className="container mx-auto">
-      <Header/>
+    <div className="w-screen">
+      <Header />
     </div>
   );
-}
+};
 
 export default App;
