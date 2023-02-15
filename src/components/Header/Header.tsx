@@ -55,7 +55,6 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
   };
 
   return (
@@ -75,8 +74,13 @@ function Header() {
           variant="menu-left-icon"
           extraClasses="xs:hidden md:flex"
         />
+
         <div className="flex flex-row">
-          <Menu links={links} variant="header" />
+          <Menu
+            links={links}
+            variant="header"
+            extraClasses={!isMenuOpen ? "hidden md:flex" : "md:flex"}
+          />
           <Button
             btnText=""
             variant="search"
@@ -92,9 +96,9 @@ function Header() {
           <ImSearch className="xs:hidden" />
         )}
         {isMenuOpen ? (
-          <CgMenu onClick={toggleMenu} className="w-8 h-8 ml-8" />
+          <CgClose onClick={toggleMenu} className="w-8 h-8 ml-8" />
         ) : (
-          <CgClose onClick={toggleMenu} className="w-8 h-8 " />
+          <CgMenu onClick={toggleMenu} className="w-8 h-8 " />
         )}
       </div>
     </header>

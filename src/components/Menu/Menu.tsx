@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { MenuTypes } from "../../types/Menu.types";
 import Link from "../Link/Link";
 
-const Menu = ({ links, variant }: MenuTypes) => {
+const Menu = ({ links, variant, extraClasses }: MenuTypes) => {
   const menuClasses = classNames("flex ", {
     "space-x-4 xs:flex-col xs:absolute xs:top-40 xs:w-screen xs:left-0 xs:space-x-0 md:static md:flex-row md:w-fit":
       variant == "header",
@@ -12,7 +12,7 @@ const Menu = ({ links, variant }: MenuTypes) => {
       variant == "header",
   });
   return (
-    <nav>
+    <nav className={extraClasses}>
       <ul className={menuClasses}>
         {links.map((link, index) => {
           return (
