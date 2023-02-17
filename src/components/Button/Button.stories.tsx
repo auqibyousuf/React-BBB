@@ -2,6 +2,7 @@ import React from "react";
 import { ImSearch } from "react-icons/im";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Button from "./Button";
+import { MdArrowForwardIos } from "react-icons/md";
 
 export default {
   title: "BBB/Button",
@@ -10,10 +11,29 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const PrimaryDefault = Template.bind({});
+PrimaryDefault.args = {
   btnText: "Button",
-  variant: "primary",
+  variant: "primary-default",
+  rightIcon: MdArrowForwardIos,
+};
+export const SecondaryDefault = Template.bind({});
+SecondaryDefault.args = {
+  btnText: "Button",
+  variant: "secondary-default",
+  rightIcon: MdArrowForwardIos,
+};
+export const PrimaryInverted = Template.bind({});
+PrimaryInverted.args = {
+  btnText: "Button",
+  variant: "primary-inverted",
+  rightIcon: MdArrowForwardIos,
+};
+export const SecondaryInverted = Template.bind({});
+SecondaryInverted.args = {
+  btnText: "Button",
+  variant: "secondary-inverted",
+  rightIcon: MdArrowForwardIos,
 };
 
 export const Search = Template.bind({});

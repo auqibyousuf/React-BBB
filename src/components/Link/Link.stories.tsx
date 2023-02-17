@@ -28,7 +28,7 @@ Login.args = {
   leftIcon: AiOutlineUser,
 };
 export const SocialIcons = Template.bind({});
-Login.args = {
+SocialIcons.args = {
   linkText: "",
   linkUrl: "https:www.google.com",
   extraClasses: "",

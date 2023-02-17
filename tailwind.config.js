@@ -8,6 +8,9 @@ module.exports = {
         background: {
           interactive: {
             default: "#0054BA",
+            inverted: {
+              hover: "#9AC5F9",
+            },
           },
           neutral: {
             medium: "#EFF4F6",

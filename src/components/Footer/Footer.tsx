@@ -5,7 +5,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { ImTwitter, ImYoutube } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import Image from "../Image/Image";
-import { Text } from "../Text/Text";
+import { Paragraph } from "../Paragraph/Paragraph";
 
 export const Footer = () => {
   const footerLinks = [
@@ -90,7 +90,8 @@ export const Footer = () => {
             altText="BPC"
           />
         </div>
-        <Text
+        <Paragraph
+          variant="label-s"
           text="British Business Bank plc is a public limited company registered in England and Wales, registration number 08616013, registered office at Steel City House, West Street, Sheffield, S1 2GQ. It is a development bank wholly owned by HM Government. British Business Bank plc and its subsidiaries are not banking institutions and do not operate as such. They are not authorised or regulated by the Prudential Regulation Authority (PRA) or the Financial Conduct Authority (FCA). A complete legal structure chart for the group can be found at www.british-business-bank.co.uk"
           extraClasses="xs:text-xs lg:text-sm lg:leading-4 md:max-w-[44.1875rem] mt-8 mb-6 text-white"
         />

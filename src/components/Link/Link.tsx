@@ -26,7 +26,7 @@ const Link = ({
     extraClasses
   );
   const iconClasses = classNames(
-    "xs:w-fit ml-1",
+    "xs:w-fit mt-1 ml-1",
     {
       "text-background-interactive-default ": variant == "header-menu",
       "text-background-interactive-default mr-1": variant == "menu-left-icon",
