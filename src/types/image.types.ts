@@ -1,5 +1,5 @@
 export type ImageTypes = {
-  imgUrl: string,
-  altText: string,
-  extraClasses: string
-} 
+  imgUrl: string;
+  altText: string;
+  extraClasses?: string;
+};

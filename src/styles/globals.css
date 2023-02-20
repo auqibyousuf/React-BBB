@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "BrHendrix Regular";
+  src: local("BrHendrix"),
+    url("../assets/fonts/BRHendrix/BRHendrix-Regular.otf");
+}
+.button {
+  clip-path: polygon(
+    8px 0,
+    100% 0,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0 100%,
+    0 8px
+  );
+}
+.hero-image {
+  clip-path: polygon(
+    360px 0,
+    100% 0,
+    100% calc(100% - 360px),
+    calc(100% - 360px) 100%,
+    0 100%,
+    0 360px
+  );
+}
+@media (min-width: 1024px) {
+  .hero-image {
+    clip-path: polygon(
+      250px 0,
+      100% 0,
+      100% calc(100% - 250px),
+      calc(100% - 250px) 100%,
+      0 100%,
+      0 250px
+    );
+  }
+}
+@media (min-width: 768px) {
+  .hero-image {
+    clip-path: polygon(
+      186px 0,
+      100% 0,
+      100% calc(100% - 186px),
+      calc(100% - 186px) 100%,
+      0 100%,
+      0 186px
+    );
+  }
+}
+
+@media (min-width: 320px) {
+  .hero-image {
+    clip-path: polygon(
+      195px 0,
+      100% 0,
+      100% calc(100% - 195px),
+      calc(100% - 195px) 100%,
+      0 100%,
+      0 195px
+    );
+  }
+}
+
+.text-image-with-two-buttons {
+  clip-path: polygon(
+    120px 0,
+    100% 0,
+    100% calc(100% - 0px),
+    calc(100% - 0px) 100%,
+    0 100%,
+    0 120px
+  );
+}
+@media (min-width: 1440px) {
+  .text-image-with-two-buttons {
+    clip-path: polygon(
+      360px 0,
+      100% 0,
+      100% calc(100% - 0px),
+      calc(100% - 0px) 100%,
+      0 100%,
+      0 360px
+    );
+  }
+}
+@media (min-width: 1024px) {
+  .text-image-with-two-buttons {
+    clip-path: polygon(
+      250px 0,
+      100% 0,
+      100% calc(100% - 0px),
+      calc(100% - 0px) 100%,
+      0 100%,
+      0 250px
+    );
+  }
+}
+@media (min-width: 768px) {
+  .text-image-with-two-buttons {
+    clip-path: polygon(
+      186px 0,
+      100% 0,
+      100% calc(100% - 0px),
+      calc(100% - 0px) 100%,
+      0 100%,
+      0 186px
+    );
+  }
+}
