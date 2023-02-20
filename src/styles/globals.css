@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Br Hendrix";
-  src: url("../assets/fonts/BRHendrix-Medium.otf");
+  font-family: "BrHendrix Regular";
+  src: local("BrHendrix"),
+    url("../assets/fonts/BRHendrix/BRHendrix-Regular.otf");
 }
 .button {
   clip-path: polygon(

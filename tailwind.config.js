@@ -44,7 +44,11 @@ module.exports = {
       lg: "1440px",
     },
     fontFamily: {
-      BrHendrix: ["BrHendrix", "sans-serif'"],
+      BrHendrixRegular: ["BrHendrix Regular"],
+      BrHendrixLight: ["BrHendrix Light"],
+      BrHendrixSemiBold: ["BrHendrix SemiBold"],
+      BrHendrixBold: ["BrHendrix Bold"],
+      BrHendrixThin: ["BrHendrix Thin"],
     },
   },
   plugins: [],

@@ -1,3 +1,4 @@
+import { Cards } from "./components/Cards/Cards";
 import { Footer } from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { HeroBanners } from "./components/HeroBanners/HeroBanners";
@@ -31,6 +32,17 @@ const App = () => {
         btn2Variant="secondary-default"
         imageUrl={require("./assets/images/illustration.png")}
         imageAlignment="image-left"
+      />
+      <Cards
+        cardVariant="newsletter"
+        cardImage=""
+        cardBtnText="Sign up"
+        cardBodyText="Just add your details to receive updates and news from the British Business Bank"
+        cardHeadingText="Sign up for our newsletter"
+        cardHeadingVariant="headline-1"
+        cardHeadingElementType="1"
+        cardBodyVariant="body-l"
+        buttonType="primary-inverted"
       />
       <Footer />
     </div>

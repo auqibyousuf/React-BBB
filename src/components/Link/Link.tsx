@@ -16,7 +16,7 @@ const Link = ({
   const LeftIcon = leftIcon as IconType;
   const SocialIcon = socialIcon as IconType;
   const linkClasses = classNames(
-    "inline-flex items-center font-medium font-BrHendrix",
+    "inline-flex items-center font-medium font-BrHendrixRegular",
     {
       "xs:justify-between md:justify-start xs:w-full": variant == "header-menu",
       "leading-4 lg:text-base md:text-sm text-background-interactive-default px-1 py-2 mb-6 items-start hover:text-text-interactive-hover hover:underline hover:underline-offset-4 sm:text-sm":
