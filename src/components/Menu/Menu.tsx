@@ -4,13 +4,13 @@ import Link from "../Link/Link";
 
 const Menu = ({ links, variant, extraClasses }: MenuTypes) => {
   const menuClasses = classNames("flex ", {
-    "space-x-4 xs:flex-col xs:absolute xs:top-40 xs:w-screen xs:left-0 xs:space-x-0 md:static md:flex-row md:w-fit":
+    "space-x-4 xs:flex-col xs:fixed xs:top-40 xs:w-screen xs:left-0 xs:space-x-0 md:static md:flex-row md:w-fit z-10 xs:bottom-0 bg-white xs:top-[90px]":
       variant == "header",
     "xs:space-x-6 md:space-x-8 ": variant == "footer",
     "xs:flex-wrap": variant == "footer-secondary",
   });
   const listClasses = classNames({
-    "lg:leading-5 md:leading-4 lg:text-base md:text-sm lg:pt-3 pb-4 lg:px-4 hover:bg-background-neutral-medium cursor-pointer xs:border-b xs:border-border-neutral-subdued xs:boder-solid md:border-none md:px-3 md:pt-3 xs:px-6 xs:py-4 text-core-primary":
+    "lg:leading-5 md:leading-4 lg:text-base md:text-sm lg:pt-3 pb-4 lg:px-4 hover:bg-background-neutral-medium cursor-pointer xs:border-b xs:border-border-neutral-subdued xs:boder-solid md:border-none md:px-3 md:pt-3 xs:px-6 xs:py-4 text-core-primary last:ml-[1.875rem]":
       variant == "header",
     "leading-5 lg:text-base md:text-sm lg:text-lg xs:text-base mb-8 text-text-interactive-inverted-pressed":
       variant == "footer",

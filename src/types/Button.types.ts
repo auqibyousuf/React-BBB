@@ -10,4 +10,5 @@ export type ButtonType = {
     | "search";
   rightIcon?: IconType;
   extraClasses?: string;
+  clickEvents?: any;
 };

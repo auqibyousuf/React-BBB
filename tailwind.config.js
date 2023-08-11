@@ -31,6 +31,9 @@ module.exports = {
           neutral: {
             subdued: "#DFE9EC",
           },
+          input: {
+            default: "#74929A",
+          },
         },
       },
     },
